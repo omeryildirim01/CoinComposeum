@@ -1,6 +1,8 @@
 package data.di
 
+import data.repository.CoinRepositoryImpl
 import data.repository.ProductRepositoryImpl
+import domain.repository.CoinRepository
 import domain.repository.ProductRepository
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -17,4 +19,6 @@ val dataModule = module {
     }
 
     factory<ProductRepository> { ProductRepositoryImpl(get<HttpClient>()) }
+
+    factory<CoinRepository> { CoinRepositoryImpl(get<HttpClient>()) }
 }
