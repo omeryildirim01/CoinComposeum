@@ -1,4 +1,4 @@
-package com.yildirimomer01.kmpsample
+package com.yildirimomer01.coincomposeum
 
 import App
 import android.os.Bundle

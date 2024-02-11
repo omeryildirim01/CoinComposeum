@@ -85,7 +85,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.yildirimomer01.kmpsample"
+    namespace = "com.yildirimomer01.coincomposeum"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -93,7 +93,7 @@ android {
     sourceSets["main"].resources.srcDirs("src/commonMain/resources")
 
     defaultConfig {
-        applicationId = "com.yildirimomer01.kmpsample"
+        applicationId = "com.yildirimomer01.CoinComposeum"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1

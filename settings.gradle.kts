@@ -1,4 +1,4 @@
-rootProject.name = "KMPSample"
+rootProject.name = "CoinComposeum"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
