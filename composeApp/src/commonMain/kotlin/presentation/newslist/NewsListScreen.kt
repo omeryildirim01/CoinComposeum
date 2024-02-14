@@ -26,7 +26,7 @@ fun NewsListScreen(viewModel: NewsListViewModel, onItemClick: (String) -> Unit) 
             is NewsListScreenState.Error -> ShowError((uiState.value as NewsListScreenState.Error).error)
             NewsListScreenState.Loading -> ProgressIndicator()
             is NewsListScreenState.ShowData -> {
-                LazyVerticalGrid(columns = GridCells.Fixed(2)) {
+                LazyVerticalGrid(columns = GridCells.Fixed(1)) {
                     items((uiState.value as NewsListScreenState.ShowData).data) {
                         NewsCard(news = it, onItemClick = onItemClick)
                     }

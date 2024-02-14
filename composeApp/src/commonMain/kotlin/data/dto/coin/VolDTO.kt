@@ -1,26 +1,23 @@
-package data.dto.news
+package data.dto.coin
 
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class CoinNewsContainerDTO(
+data class VolDTO(
     @SerialName("Data")
-    val data: List<NewsDTO>?,
+    val data: List<CoinVolDto>?,
     @SerialName("HasWarning")
     val hasWarning: Boolean?,
     @SerialName("Message")
     val message: String?,
+    @SerialName("MetaData")
+    val metaData: MetaData?,
     @SerialName("RateLimit")
     val rateLimit: RateLimit?,
+    @SerialName("SponsoredData")
+    val sponsoredData: List<String>?,
     @SerialName("Type")
-    val type: Int?,
-    @SerialName("Promoted")
-    val promoted: List<Promoted>?
-)
-
-@Serializable
-data class Promoted(
-    val name: String?
+    val type: Int?
 )
